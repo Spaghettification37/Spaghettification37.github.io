@@ -1,0 +1,184 @@
+
+/* RGB COLOR - https://coolors.co/001427-708d81-ede7e3-6b7fd7-963484
+oxford-blue: (dark blue)    rgb(0 20 39 / 1);
+isabelline: (white)         rgb(237 231 227 / 1);
+hookers-green: (green)      rgb(112 141 129 / 1);
+glaucous: (light blue)      rgb(107 127 215 / 1);
+plum: (purple)              rgb(150 52 132 / 1);
+*/
+
+/* GLOBAL   --------------------------*/
+
+/* border box */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    background-color:rgb(0 20 39 / 1);
+    color: rgb(237 231 227 / 1);
+    margin: 0;
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+h1, h2, h3 {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* links */
+a {
+    color: rgb(107 127 215 / 1);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(150 52 132 / 1);
+    text-decoration: underline;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1060px;
+}
+
+/* HOME     --------------------------*/
+.home {
+    background: url("https://picsum.photos/800/?blur=1.jpg") no-repeat;
+    background-color: rgb(0 20 39 / 1);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+.home .content-bg{
+    background-color:rgb(0 20 39 / .8);
+    padding: 5px 15px;
+    border-radius: 6px;
+}
+
+/* RESUME   --------------------------*/
+.download-link {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+.return {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+.btn {
+    background: rgb(112 141 129 / 1);
+    color: rgb(237 231 227 / 1);
+    padding: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 4px;
+}
+.resume header::before{
+    background: url("https://picsum.photos/300/?blur=1.jpg") no-repeat center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 300px;
+}
+
+.resume-section{
+    margin-bottom: 50px;
+}
+.resume-section h2 {
+    border-bottom: 2px solid rgb(237 231 227 / 1);
+}
+
+/* PROJECTS   -------------*/
+.resume-projects {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-auto-rows: auto;
+    gap: 20px;
+    justify-content: center;
+}
+.resume-projects img {
+    width: 500px;
+}
+.project-desc h3{
+    margin: 0;
+}
+.project-desc p {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+.project-desc a img {
+    width: 50px;
+}
+@media screen and (max-width: 1059px) and (min-width: 560px) {
+    .resume-projects {
+        grid-template-columns: 500px;
+        grid-auto-rows: auto;
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 559px) {
+    .resume-projects {
+        grid-template-columns: 100%;
+        grid-auto-rows: auto;
+        gap: 10px;
+    }
+    .resume-projects img {
+        width: 100%;
+    }
+}
+
+/* EDUCATION  ------------*/
+.resume-education{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: repeat(3, 1fr) auto;
+    align-items: center;
+    gap: 20px;
+}
+.resume-education img{
+    width:100px;
+}
+.relevant-courses {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* FOOTER   --------------------------*/
+.footer {
+    background-color:rgb(237 231 227 / 1);
+    color: rgb(0 20 39 / 1);
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+.socials li {
+    display: inline-block;
+}
+.socials img {
+    width: 32px;
+}
+.socials img:hover{
+    opacity: .6;
+}
