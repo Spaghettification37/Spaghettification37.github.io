@@ -105,6 +105,12 @@ a:hover {
 .resume a img:hover{
     opacity: .6;
 }
+.contact-section{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 /* PROJECTS   -------------*/
 .resume-projects {
@@ -113,6 +119,7 @@ a:hover {
     grid-auto-rows: auto;
     gap: 20px;
     justify-content: center;
+    align-items: center;
 }
 .resume-projects img {
     width: 500px;
